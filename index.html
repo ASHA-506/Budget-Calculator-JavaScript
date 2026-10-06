@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpendCraft Register Page</title>
+<link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+     rel="stylesheet"integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWL
+     zeN8tE5YBujZqJLB"crossorigin="anonymous">
+
+</head>
+<body >
+<div class="main">
+
+<div  class="div1">
+    <h1 class="spend">SpendCraft</h1>
+    <h2 style="color: black;margin-bottom: 38px; font-style: italic;">.....For Better Tomorrow.....</h2>
+    <div class="sub"></div>
+</div>
+    
+    <div    id="register-form" class="div2" >
+     <h1 class="reg">REGISTER</h1>
+
+<div class="form-container">
+    <form action="" method="post">
+        <div>
+            <label for="username">Username:</label><br>
+            <input type="text" id="regUsername" name="username"  required>
+        </div>
+        <div>
+            <label for="email">Email Id:</label><br>
+            <input type="email" id="regEmail" name="email"  required>
+        </div>
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="regPassword" name="password"  required>
+        </div class="link">
+<div>   
+     <span>If you already have an account.</span>  
+     <a onclick="showLogin()" style="text-decoration: none; color: green;">Login</a>
+</div>
+<div>
+    <button type="button" onclick="handleRegister()" >Register</button>
+</div>
+
+    </form>
+</div>
+</div>
+  <div id="login-form" class="div2" style="display: none;" >
+     <h1 class="reg">LOGIN</h1>
+
+<div class="form-container">
+    <form action="/budget.html" method="post">
+        
+        <div>
+            <label for="email">Email Id:</label><br>
+            <input type="email" id="loginEmail" name="loginEmail"  required>
+        </div>
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="loginPassword" name="loginPassword"  required>
+        </div class="link">
+<div>   
+     <span>Create an account.</span>  
+     <a onclick="showRegister()"  style="text-decoration: none; color:red;">Register</a>
+</div>
+<div>
+    <button type="button" onclick="handleLogin()">Login</button>
+</div>
+
+    </form>
+</div>
+
+
+    </div>
+
+
+
+</div>
+
+<script src="script.js">
+// function showLogin(){
+//     document.getElementById("register-form").style.display="none";
+//     document.getElementById("login-form").style.display="block";
+// }
+// function showRegister(){
+//     document.getElementById("login-form").style.display="none";
+//     document.getElementById("register-form").style.display="block";
+// }
+</script>
+
+</body>
+</html>
